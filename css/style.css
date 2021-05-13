@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+#road {
+  width: 500px;
+  height: 600px;
+  background-image: url('/js-assignment-car/img/road.gif');
+  animation: moveRoad 2s linear infinite;
+  background-repeat: repeat-y;
+  background-position: 0%;
+  overflow: hidden;
+}
+
+@keyframes moveRoad {
+  0% {
+      background-position-y: 0px;
+  }
+  100% {
+      background-position-y: 600px;
+  }
+}
+
+#main-car {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 500px;
+  left: 150px;
+  background-image: url('/js-assignment-car/img/main-car.gif');
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+
+#enemy {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 0;
+  left: 50px;
+  background-image: url('/js-assignment-car/img/car2.gif');
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  animation: attack 1s linear infinite
+}
+
+@keyframes attack {
+  0% {
+      top: -200px;
+  }
+  100% {
+      top: 500px
+  }
+}
+
+#score {
+  position: fixed;
+  top: 0px;
+  right: 10px;
+  background: white;
+  height: 50px;
+  width: 150px;
+  font-size: 30px;
+  white-space: nowrap;
+  padding: 12px;
+}
