@@ -44,10 +44,10 @@ function collisionDetection(){
 }
 requestAnimationFrame(collisionDetection);
 
-// function gameOver(){
-//   let gameover = document.querySelector('#game-over');
-//   let restart = document.createElement('button')
-//   gameover.appendChild(restart);
-//   restart.innerHTML = 'RESTART';
-//   gameover.innerHTML = 'GAME OVER';
-// }
+function gameOver(){
+  let gameover = document.querySelector('#game-over');
+  let restart = document.createElement('button')
+  gameover.appendChild(restart);
+  restart.innerHTML = 'RESTART';
+  gameover.innerHTML = 'GAME OVER';
+}
