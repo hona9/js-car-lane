@@ -14,7 +14,7 @@ body {
 #road {
   width: 500px;
   height: 600px;
-  background-image: url('/js-assignment-car/img/road.gif');
+  background-image: url('../img/road.gif');
   animation: moveRoad 2s linear infinite;
   background-repeat: repeat-y;
   background-position: 0%;
@@ -36,7 +36,7 @@ body {
   position: relative;
   top: 500px;
   left: 150px;
-  background-image: url('/js-assignment-car/img/main-car.gif');
+  background-image: url('../img/main-car.gif');
   background-size: 50% 100%;
   background-repeat: no-repeat;
   background-position-x: 50%;
@@ -48,7 +48,7 @@ body {
   position: relative;
   top: 0;
   left: 50px;
-  background-image: url('/js-assignment-car/img/car2.gif');
+  background-image: url('../img/car2.gif');
   background-size: 50% 100%;
   background-repeat: no-repeat;
   background-position-x: 50%;
